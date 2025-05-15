@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  height: 800px;
+  background-color: #E1FF8F;
+  background-image: url(img/stars.png);
+  background-repeat: no-repeat;
+  background-position: 380px -270px;
+  background-size: cover;
+}
+
+.top__content {
+  padding-top: 196px;
+  padding-left: 120px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #202027;
+  max-width: 769px;
+  margin-bottom: 24px;
+}
+
+.top-text {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #202027;
+  max-width: 720px;
+  margin-bottom: 48px;
+}
+
+.top-btn {
+  border: 1px solid #202027;
+  box-sizing: border-box;
+  border-radius: 60px;
+  background-color: #202027;
+  width: 247px;
+  height: 66px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  color: #FFFFFF;
+  font-family: inherit;
+  padding: 16px 65px;
+}
+.top-btn:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+}
+
+.content {
+  background-color: #202027;
+  position: relative;
+}
+
+.midllestar {
+  position: absolute;
+  right: 0;
+}
+
+.doublestars {
+  position: absolute;
+  left: 0;
+  top: 770px;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #FFFFFF;
+  padding-top: 64px;
+}
+
+.content-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-top: 24px;
+  width: 788px;
+}
+
+.games {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+  flex-wrap: wrap;
+  margin-top: 72px;
+  padding-bottom: 50px;
+}
+
+.game {
+  display: grid;
+  grid-column: span 4;
+  position: relative;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  height: 474px;
+}
+.game:hover {
+  transform: scale(1.1);
+}
+
+.game__info {
+  width: 314px;
+  height: 90px;
+  gap: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #202027;
+}
+
+.number {
+  border: 1px solid #F7F7F7;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
+  border-radius: 52px;
+  width: 108px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #202027;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  font-family: inherit;
+}
+
+.mini-game-content {
+  background-color: #202027;
+  position: relative;
+}
+
+.doublestars2 {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  rotate: 5deg;
+}
+
+.doublestars3 {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+}
+
+.mini-games {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 72px;
+  padding-bottom: 144px;
+  gap: 32px;
+}
+
+.mini-game {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  width: 1200px;
+  height: 500px;
+}
+
+.mini-game__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 505px;
+  padding-top: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.mini-game__info:nth-child(2n) {
+  order: 2;
+}
+
+.mini-game__img {
+  width: 50%;
+}
+.mini-game__img:nth-child(2n) {
+  order: 1;
+}
+
+.name-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #202027;
+}
+
+.btn-play {
+  border: 1px solid #202027;
+  box-sizing: border-box;
+  border-radius: 60px;
+  background-color: #202027;
+  width: 247px;
+  height: 66px;
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  color: #FFFFFF;
+  font-family: inherit;
+  padding: 16px 65px;
+}
+.btn-play:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+}
+
+.footer {
+  background-color: #BDED35;
+  height: 150px;
+}
+
+.footer-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #000000;
+  padding-top: 61px;
+  padding-left: 450px;
+  padding-right: 450px;
+}/*# sourceMappingURL=minigames.css.map */
