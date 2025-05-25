@@ -70,6 +70,10 @@ a {
     }
 }
 
+.mob-top-btn {
+        display: none;
+}
+
 .strip-container {
     width: 3220px;
     height: 90px;
@@ -225,6 +229,11 @@ a {
     font-family: inherit;
 }
 
+.minigames-content {
+    background-color: #202027;
+    position: relative;
+}
+
 .doublestars2 {
     position: absolute;
     right: 100px;
@@ -334,3 +343,5 @@ a {
     padding-left: 450px;
     padding-right: 450px;
 }
+
+@import 'mobile';
