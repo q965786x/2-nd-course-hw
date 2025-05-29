@@ -24,7 +24,7 @@ a {
     background-image: url(img/stars.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 390px -270px;
+    background-position: 130px -210px;
 }
 
 .top__content {
@@ -70,8 +70,11 @@ a {
     }
 }
 
+.mob-top-btn {
+        display: none;
+}
+
 .strip-container {
-    width: 3220px;
     height: 90px;
     overflow: hidden;
     position: relative;
@@ -89,7 +92,6 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 200px;
     color: #202027;
     font-weight: 700;
     font-size: 30px;
@@ -157,6 +159,7 @@ a {
     gap: 32px;
     margin-top: 72px;
     padding-bottom: 50px;
+    z-index: 1;
 }
 
 .games-box {
@@ -223,6 +226,11 @@ a {
     padding-top: 8px;
     padding-bottom: 10px;
     font-family: inherit;
+}
+
+.minigames-content {
+    background-color: #202027;
+    position: relative;
 }
 
 .doublestars2 {
@@ -334,3 +342,5 @@ a {
     padding-left: 450px;
     padding-right: 450px;
 }
+
+@import 'mobile';
