@@ -24,7 +24,7 @@ a {
   background-image: url(img/stars.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 390px -270px;
+  background-position: 130px -210px;
 }
 
 .top__content {
@@ -74,7 +74,6 @@ a {
 }
 
 .strip-container {
-  width: 3220px;
   height: 90px;
   overflow: hidden;
   position: relative;
@@ -92,7 +91,6 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 200px;
   color: #202027;
   font-weight: 700;
   font-size: 30px;
@@ -159,6 +157,7 @@ a {
   gap: 32px;
   margin-top: 72px;
   padding-bottom: 50px;
+  z-index: 1;
 }
 
 .games-box {
@@ -402,6 +401,23 @@ a {
     font-family: inherit;
     padding: 16px 103px;
   }
+  .strip-container {
+    height: 52px;
+    overflow-x: hidden;
+    padding: 10px 0;
+  }
+  .game-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #202027;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 26px;
+    margin-right: 26px;
+    transition: transform 0.3s, background 0.3s;
+  }
   .content {
     display: none;
   }
@@ -426,13 +442,11 @@ a {
     flex-direction: column;
     align-content: flex-start;
     gap: 24px;
-    max-width: 342px;
     padding: 48px 0;
   }
   .minigame-card {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: auto;
     border: 1px solid #000000;
     box-sizing: border-box;
