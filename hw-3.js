@@ -10,6 +10,10 @@ while (i <=n) {
     i++;
 }
 
+/*for (i = 0; i < 2; i++) {
+console.log('Привет!')
+}*/
+
 /*Заданиие 2*/
 i = 1;
 while (i <= 5) {
@@ -17,12 +21,20 @@ while (i <= 5) {
     i++;
 }
 
+/*for (i = 1; i <=5; i++) {
+    console.log(i);
+}*/
+
 /*Задание 3*/
 i = 7;
 do {
    console.log(i);
    i++;
 } while(i <= 22);
+
+/*for (i = 7; i <=22; i++) {
+    console.log(i);
+}*/
 
 /*Задание 4*/
 const obj = {
@@ -39,11 +51,12 @@ for (let key in obj) {
 n = 1000;
 let num = 0;
 while(n >= 50) {
-    n = n / 2;  
-    num++;  
+    n /=2;
+    console.log(n);  
+    num++;
 }
-console.log(n);
-console.log(num);
+console.log(`Количество циклов: ${num}`); 
+   
 
 /*Задание 6*/
 const firstFriday = 5;
