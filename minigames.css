@@ -517,4 +517,229 @@ a {
     background-color: none;
     color: inherit;
   }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .top {
+    height: 750px;
+    background-color: #E1FF8F;
+    background-image: url(img/stars.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10px -170px;
+  }
+  .top__content {
+    padding-top: 170px;
+  }
+  .title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #202027;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 24px;
+  }
+  .top-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #202027;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 36px;
+  }
+  .top-btn {
+    border: 1px solid #202027;
+    box-sizing: border-box;
+    border-radius: 60px;
+    background-color: #202027;
+    width: 250px;
+    height: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-family: inherit;
+    padding: 16px 65px;
+    margin-bottom: 156px;
+  }
+  .top-btn:hover {
+    background-color: #FFFFFF;
+    color: #202027;
+  }
+  .midllestar {
+    display: none;
+  }
+  .doublestars {
+    display: none;
+  }
+  .doublestars2 {
+    display: none;
+  }
+  .doublestars3 {
+    display: none;
+  }
+  .heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding-top: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+  }
+  .content-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 700px;
+  }
+  .games-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .games-box {
+    display: flex;
+    flex-direction: row;
+  }
+  .game-card {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    width: 345px;
+    overflow: hidden;
+    transition: tranform 0.3s;
+  }
+  .game-card:hover {
+    transform: scale(1.1);
+  }
+  .game-card.regular {
+    height: 460px;
+  }
+  .game-card.large {
+    height: 460px;
+  }
+  .game-img {
+    width: 100%;
+    height: 60%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .game-info {
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 32px;
+    gap: 24px;
+  }
+  .game-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #202027;
+  }
+  .game-number {
+    border: 1px solid #F7F7F7;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+    border-radius: 52px;
+    width: 100px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #202027;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-family: inherit;
+  }
+  .doublestars2 {
+    display: none;
+  }
+  .doublestars3 {
+    display: none;
+  }
+  .minigames-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 832px;
+    padding-top: 62px;
+    padding-bottom: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .minigame-card {
+    display: flex;
+    width: auto;
+    height: auto;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 46px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+  .minigame-image {
+    flex: 1;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+  }
+  .minigame-info {
+    flex: 1;
+    max-width: 100%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 150px;
+  }
+  .minigame-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #202027;
+    margin-bottom: 20px;
+  }
+  .minigame-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #202027;
+    margin-bottom: 30px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer-text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #000000;
+    padding-top: 40px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 40px;
+  }
 }/*# sourceMappingURL=minigames.css.map */
