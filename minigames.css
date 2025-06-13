@@ -340,9 +340,8 @@ a {
   font-weight: 600;
   line-height: 29px;
   color: #000000;
-  padding-top: 61px;
-  padding-left: 450px;
-  padding-right: 450px;
+  padding: 40px;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -449,7 +448,7 @@ a {
   .minigame-card {
     display: flex;
     flex-direction: column;
-    height: auto;
+    /*height: auto;*/
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 46px;
@@ -508,10 +507,8 @@ a {
     font-weight: 600;
     line-height: 100%;
     color: #000000;
-    padding-top: 40px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 40px;
+    padding: 40px;
+    text-align: center;
   }
 }
 @media (hover: none) {
@@ -605,10 +602,8 @@ a {
     font-weight: 600;
     line-height: 100%;
     color: #000000;
-    padding-top: 40px;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-bottom: 40px;
+    padding: 40px;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 833px) {
@@ -822,9 +817,7 @@ a {
     font-weight: 600;
     line-height: 100%;
     color: #000000;
-    padding-top: 40px;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-bottom: 40px;
+    padding: 40px;
+    text-align: center;
   }
 }/*# sourceMappingURL=minigames.css.map */
