@@ -1,4 +1,5 @@
 @media (max-width: 1024px) {
+    
     .center {
         padding-left: calc(50% - 786px/2);
         padding-right: calc(50% - 393px);
@@ -53,7 +54,7 @@
         overflow: hidden;
     }
 
-    .minigame-image {
+    .minigame-img {
         flex: 1;
         max-width: 100%;
         object-fit: cover;
@@ -101,7 +102,8 @@
 
 
 @media (min-width: 768px) and (max-width: 833px) {
-     .top {
+    
+    .top {
         height: 750px;
         background-color: #E1FF8F;
         background-image: url(img/stars.png);
@@ -282,10 +284,6 @@
         flex-direction: column;
         gap: 32px;
         max-width: 832px;
-        padding-top: 62px;
-        padding-bottom: 100px;  
-        padding-left: 16px;  
-        padding-right: 16px;
     }
 
     .minigame-card {
@@ -299,7 +297,7 @@
         overflow: hidden;
     }
 
-    .minigame-image {
+    .minigame-img {
         flex: 1;
         max-width: 100%;
         object-fit: cover;
@@ -309,10 +307,7 @@
     .minigame-info {
         flex: 1;
         max-width: 100%;
-        padding-top: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 150px;
+        padding: 30px;
     }
 
     .minigame-title {
