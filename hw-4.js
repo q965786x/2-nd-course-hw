@@ -11,6 +11,14 @@ function min(a, b) {
  console.log(min (4, 8));
  console.log(min (6, 6));
 
+ //Вариант 2
+
+ const min = (a, b) => (a < b) ? a : b;
+
+ console.log(min (4, 8));
+ console.log(min (6, 6));
+
+
  /*Задание 2*/
 
  function  isNotEven(number) {
@@ -24,6 +32,14 @@ function min(a, b) {
  console.log(isNotEven(2));
  console.log(isNotEven(3));
 
+ //Вариант 2
+
+ const isOdd = (n) => (n % 2 === 0) ? 'Число четное': 'Число нечетное';
+
+ console.log(isOdd(5));
+ console.log(isOdd(4));
+
+
  /*Задание 3*/
 
  function squareNumber(number) {
@@ -33,13 +49,24 @@ function min(a, b) {
 
  squareNumber(3);
 
-
  function squareNumber(num) {
     return num ** 2;
 }
 
 const result = squareNumber(5);
 console.log(result);
+
+//Вариант 2
+
+function square(number) {
+   console.log(number ** 2);
+}
+
+const up = (n) => n ** 2;
+
+square(5);
+console.log(up(5));
+
 
 /*Задание 4*/
 
@@ -48,7 +75,7 @@ function checkAge() {
 
     if (age < 0) {
         console.log('Вы ввели неправильное значение');
-    } else if (age > 0 && age < 10) {
+    } else if (age > 0 && age < 12) {
         console.log('Привет, друг!');
     } else {
         console.log('Добро пожаловать!');
@@ -57,14 +84,34 @@ function checkAge() {
 
 checkAge();
 
+//Вариант 2
+
+function age() {
+    let age = +prompt('Сколько тебе лет?');
+
+    if (age < 0) {
+        console.log('Вы ввели неправильное значение');
+    } else if (age >= 0 && age <= 12) {
+        console.log('Привет, друг!');
+    } else if (age >= 13) {
+        console.log('Добро пожаловать!');
+    } else {
+        console.log('Вы ввели неправильное значение');
+    }    
+}
+
+age();
+
+
 /*Задание 5*/
 
 function multiplyNumbers(a, b) {
     if (isNaN(a) || isNaN(b)) {
         return 'Одно или оба значения не являются числом';
-    } 
+    } else {
         return a * b;
-    }
+    }        
+}
 
 console.log(multiplyNumbers(3, 5)); 
 console.log(multiplyNumbers('abc', 5)); 
@@ -72,7 +119,7 @@ console.log(multiplyNumbers('abc', 5));
 /*Задание 6*/
 
 function calculateCube() {
-    const userInput = prompt("Введите число:");
+    const userInput = prompt('Введите число:');
     const n = parseFloat(userInput);
 
     if (isNaN(n)) {
@@ -87,6 +134,18 @@ function calculateCube() {
 for (let i = 0; i <= 10; i++) {
     console.log(calculateCube());
 }
+
+//Вариант 2
+function getNumber() {
+    let number = prompt('Введите число:');
+    if (isNaN(number)) {
+        return 'Переданный параметр не является числом';
+    } else { 
+        return `${number} в кубе равняется ${number ** 3}`;
+    }
+}
+
+console.log(getNumber());
 
 /*Задание 7*/
 
