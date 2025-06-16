@@ -7,8 +7,8 @@ function getRandomNumber(min, max) {
 function generateMathTask() {
     const operators = ['+', '-', '*', '/'];
     const operation = operators[Math.floor(Math.random() * operators.length)];  
-    let firstNumber = getRandomNumber(1, 10);;
-    let secondNumber = getRandomNumber(1, 10);;
+    const firstNumber = getRandomNumber(1, 10);
+    const secondNumber = getRandomNumber(1, 10);
     const task = `${firstNumber} ${operation} ${secondNumber}`;  
     
     return {
