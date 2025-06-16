@@ -39,6 +39,15 @@ alert(num += 1);
 alert(num -= 1);
 alert(num);
 
+/*let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num += 1;
+num -= 1;
+alert(num);*/
+
 /*Задание 8*/
 let age = prompt ("Сколько вам лет?");
 alert (age);
@@ -47,15 +56,17 @@ alert (age);
 const user = {
     name : 'Lialia',
     age : 50,
-    'isAdmin': false
-};
-alert (`Это объект user:\n${JSON.stringify(user)}`);
+    isAdmin: true,
+}
 
 /*Задание 10*/
 let name = prompt ("Как вас зовут?");
 let greeting = "Привет";
 let phrase = `Привет, ${name}!`; // Шаблонная строка
 alert (phrase);
+
+/*let userName = prompt('Твоё имя');
+alert(`Привет ${userName}!`);*/
 
 /*допзадание*/
 let number = Number(prompt("Загадайте любое число:"));
