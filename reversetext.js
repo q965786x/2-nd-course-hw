@@ -1,11 +1,15 @@
-function reverseText(str) {
-  return str.split('').reverse().join('');
+function reverseText() {
+  let textInput = String(prompt('Введи любой текст, а я его переверну'));
+  let reversedText = textInput.split('').reverse().join('');
+  alert(reversedText);
 }
 
-const textInput = prompt('Введи любой текст');
-const reversedText = reverseText(textInput);
+  
 
-console.log(reversedText);
+  
+
+
+
 
     
 

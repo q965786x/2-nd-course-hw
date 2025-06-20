@@ -37,8 +37,6 @@ function simpleArithmetic() {
         }
 }
 
-simpleArithmetic();
-
 
 
 

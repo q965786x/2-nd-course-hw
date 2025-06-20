@@ -31,5 +31,3 @@ function simpleQuiz() {
     
     alert(`Ты верно ответил на ${attempts} вопросов из ${quiz.length}`);
 }
-
-simpleQuiz();
