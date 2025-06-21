@@ -87,7 +87,7 @@ const arr = [];
 
 for (let i = 0; i < 3; i++) {
   const arr2 = [];
-  for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
     arr2.push(1);
   }
   arr.push(arr2);
