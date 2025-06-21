@@ -87,7 +87,7 @@ checkAge();
 //Вариант 2
 
 function age() {
-    let age = +prompt('Сколько тебе лет?');
+    const age = Number(prompt('Сколько тебе лет?'));
 
     if (age < 0) {
         console.log('Вы ввели неправильное значение');
