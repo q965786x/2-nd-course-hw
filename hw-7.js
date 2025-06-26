@@ -47,6 +47,38 @@ const people = [
 
 console.log(filter(people, isMale));
 
+//Вариант 2
+
+function filter(array, ruleFunction) {
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        if (ruleFunction(array[i])) {
+            result.push(array[i]);
+        }
+    }
+    return result;    
+}
+
+function isPositive(num) {
+    return num > 0;
+}
+
+function isMale(person) {
+    return person.gender === 'male';
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const people = [
+   {name: 'Глеб', gender: 'male'},
+   {name: 'Анна', gender: 'female'},
+   {name: 'Олег', gender: 'male'},
+   {name: 'Оксана', gender: 'female'}
+];
+
+console.log(filter(people, isMale));
+
+
 /*Задание 3*/
 //Напишите программу, которая на протяжении 30 секунд
 //каждые 3 секунды будет выводить в консоль текущую дату.
@@ -62,6 +94,17 @@ setTimeout(() => {
     clearInterval(intervalId); // Очищаем интервал
     console.log("30 секунд прошло");
 }, 1000 * 30);
+
+//Вариант 2
+
+const intervalId = setInterval(() => {
+    console.log(new Date().toString());
+}, 3000);
+
+setTimeout(() => {
+    clearInterval(intervalId);
+    console.log('30 секунд прошло');
+}, 30000);
 
 
 /*Задание 4*/
