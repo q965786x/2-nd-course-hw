@@ -14,7 +14,14 @@
     <div class="top center">
         <section class="top__content">
             <h1 class="title">Добро пожаловать на мой сайт мини-игр</h1>
-            <p class="top-text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и приступай.</p>
+            <p class="top-text">
+                Тебе предстоит пройти несколько увлекательных игр.
+                <br>
+                Если готов, нажимай
+                <a href="#gameSection" class="top-text__link">«Поехали!»</a> 
+                и
+                <a href="#gameSection" class="top-text__link">приступай.</a>
+            </p>
             <a class="top-btn" href="#content">Поехали!</a>
             <a class="mob-top-btn" href="#minigames-content">Поехали!</a>
         </section>
@@ -35,7 +42,8 @@
             <img class="stripstar" src="img/stripstar.png" alt="stripstar">
         </div>
     </div>
-    <section class="content center">
+
+    <section id="gameSection" class="content center">
         <div id="content"></div>
         <div class="stars">
             <img class="midllestar" src="img/middlestar.png" alt="midllestar">
@@ -96,7 +104,7 @@
             </div>       
         </div>
     </section>
-    <section class="minigames-content center">
+    <section id="miniGameSection" class="minigames-content center">
         <div id="minigames-content"></div>
         <div>
             <img class="doublestars2" src="img/doublestars2.png" alt="doublestars">
@@ -156,11 +164,12 @@
                     <h3 class="minigame-title">Генератор  случайных  цветов</h3>
                     <p class="minigame-description">Игра, в которой при клике на кнопку фон страницы меняется на
                         случайный.</p>
-                    <button class="minigame-btn">Играть!</button>
+                    <button id="changeBackgroundColorBtn" class="minigame-btn">Играть!</button>                    
                 </div>                
             </article>
         </div>
     </section>
+
     <footer class="footer center">
         <p class="footer-text">Все права защищены.</p>
     </footer>
@@ -170,6 +179,16 @@
     <script src="reversetext.js"></script>
     <script src="simplequiz.js"></script>
     <script src="rockscissorspaper.js"></script>
+    <script>
+        document.getElementById('changeBackgroundColorBtn').addEventListener('click', function() {
+            
+            const gameSectionEl = document.querySelector('#gameSection');
+            const miniGameSectionEl = document.querySelector('#miniGameSection');   
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);            
+            gameSectionEl.style.backgroundColor = randomColor;
+            miniGameSectionEl.style.backgroundColor = randomColor;
+            });            
+    </script>
 
 </body>
 
