@@ -385,6 +385,12 @@ a {
     padding-right: 22px;
     margin-bottom: 36px;
   }
+  .top-text__link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #202027;
+  }
   .top-btn {
     display: none;
   }
