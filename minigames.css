@@ -49,6 +49,13 @@ a {
   margin-bottom: 48px;
 }
 
+.top-text__link {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #202027;
+}
+
 .top-btn {
   border: 1px solid #202027;
   box-sizing: border-box;
@@ -377,6 +384,12 @@ a {
     padding-left: 22px;
     padding-right: 22px;
     margin-bottom: 36px;
+  }
+  .top-text__link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #202027;
   }
   .top-btn {
     display: none;

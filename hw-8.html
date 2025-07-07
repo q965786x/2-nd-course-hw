@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--Задание 1. Скрытие и показ текста
+    Задача: cоздайте кнопку, которая будет скрывать и показывать текст в заголовке <h1>.-->
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Этот текст можно скрыть и показать</h1>
+    <button id="toggleButton">Скрыть</button>
+
+    <script>
+        const title = document.querySelector('#title');
+        const button = document.querySelector('#toggleButton');
+
+        button.addEventListener('click', function() {
+            if (title.classList.contains('hidden')) {
+                title.classList.remove('hidden');
+                button.textContent = 'Скрыть';
+            } else {
+                title.classList.add('hidden');
+                button.textContent = 'Показать';
+            }
+        });
+    </script>
+</body>
+
+
+<!--Задание 2. Изменение стиля элемента
+    Задача: создайте кнопку, которая изменяет цвет текста в элементе <p>.-->
+
+<body>
+    <p class="description">Изменение цвета в параграфе.</p>
+    <button id="changeColor">Изменить цвет</button>
+
+    <script>
+        const paragraphElement = document.querySelector('.description');
+        const button = document.querySelector('#changeColor');
+
+        button.addEventListener('click', function() {
+            paragraphElement.style.color = 'blue';
+        });        
+    </script>
+</body>
+
+
+<!--Задание 3. Динамическое изменение текста
+    Задача: создайте кнопку, которая меняет текст в заголовке <h1>.-->
+
+<body>
+    <h1 id="title" >Изменение текста в заголовке.</h1>
+    <button id="changeText">Изменить текст</button>
+
+    <script>
+        const titleElement = document.querySelector('#title');
+        const button = document.querySelector('#changeText');
+
+        button.addEventListener('click', function(){
+            titleElement.textContent = 'Привет, мир!';
+        });
+    </script>
+</body>
+
+
+<!--Задание 4. Поиск и изменение элементов по классу
+Задача: найдите все элементы с классом description и измените их текст на «Измененный текст».-->
+
+<body>
+    <div class="description">Элемент 1</div>
+    <div class="description">Элемент 2</div>
+    <div class="description">Элемент 3</div>
+
+    <script>
+        const allDescriptions = document.querySelectorAll('.description');
+        console.log(allDescriptions);
+
+        allDescriptions.forEach(description => {
+            description.textContent = 'Измененный текст.';
+        });
+    </script>
+</body>
+
+
+<!--Задание 5. Работа с querySelectorAll
+    Задача: создайте несколько элементов <p> с разными классами. Используйте querySelectorAll, 
+    чтобы найти все элементы с классом description и изменить их текст.-->
+
+<body>
+    <p class="description">Описание</p>
+    <p class="heading">Заголовок</p>
+    <p class="description">Описание1</p>
+    <p class="title">Заглавие</p>
+    <p class="description">Описание2</p>
+    <script>
+        const onlyDescriptions = document.querySelectorAll('.description');
+        console.log(onlyDescriptions);
+
+        onlyDescriptions.forEach(description => {
+            description.textContent = "Новый текст";
+        });        
+    </script>
+</body>
+
+
+<!--Задание 6. Добавление нового элемента в DOM
+Задача: создайте кнопку, которая добавляет новый элемент <p> с текстом в конец документа.-->
+
+<body>
+    <button id="addElement">Добавить элемент</button>
+
+    <script>
+        document.getElementById('addElement').addEventListener('click', function() {
+            
+            const newParagraph = document.createElement('paragraph');
+            newParagraph.textContent = 'Новый абзац';
+            document.body.appendChild(newParagraph);
+        });
+    </script>
+</body>
+
+
+<!--Задание 7. Удаление элемента
+    Задача: создайте кнопку, которая удаляет первый элемент <p> с классом description.-->
+
+<body>
+    <p class="description">Описание</p>
+    <p class="heading">Заголовок</p>
+    <p class="description">Описание1</p>
+    <p class="title">Заглавие</p>
+    <p class="description">Описание2</p>
+    <button id="removeElement">Удалить элемент</button>
+
+    <script>
+        const button = document.getElementById('removeElement')
+
+        button.addEventListener('click', function(){
+            const firstDescription = document.querySelector('.description');
+            if (firstDescription){
+                firstDescription.remove();
+            }            
+        });        
+    </script>
+</body>
+
+</html>
