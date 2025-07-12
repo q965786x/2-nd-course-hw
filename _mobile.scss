@@ -132,6 +132,18 @@
         max-height: 626px;
     }
 
+    .minigame-card:nth-child(1), .minigame-card:nth-child(4) {
+        height: 550px;
+    }
+
+    .minigame-card:nth-child(2), .minigame-card:nth-child(3) {
+        height: 580px;
+    }
+
+    .minigame-card:nth-child(5) {
+        height: 610px;
+    }
+
     .minigame-img {
         order: 1;
         max-width: 100%;
