@@ -162,18 +162,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   position: inherit;
-  justify-content: space-between;
   gap: 32px;
   margin-top: 72px;
   padding-bottom: 50px;
   z-index: 1;
-}
-
-.games-box {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  flex: 1;
 }
 
 .game-card {
@@ -462,6 +454,15 @@ a {
     overflow: hidden;
     max-height: 626px;
   }
+  .minigame-card:nth-child(1), .minigame-card:nth-child(4) {
+    height: 550px;
+  }
+  .minigame-card:nth-child(2), .minigame-card:nth-child(3) {
+    height: 580px;
+  }
+  .minigame-card:nth-child(5) {
+    height: 610px;
+  }
   .minigame-img {
     order: 1;
     max-width: 100%;
@@ -536,10 +537,6 @@ a {
     padding-left: 16px;
     padding-right: 16px;
     z-index: 1;
-  }
-  .games-box {
-    display: flex;
-    flex-direction: row;
   }
   .game-card {
     background-color: #FFFFFF;
