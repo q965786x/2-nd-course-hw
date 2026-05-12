@@ -36,7 +36,3 @@ function simpleArithmetic() {
             alert('Спасибо за игру!');
         }
 }
-
-
-
-
