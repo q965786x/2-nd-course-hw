@@ -3,14 +3,3 @@ function reverseText() {
   let reversedText = textInput.split('').reverse().join('');
   alert(reversedText);
 }
-
-  
-
-  
-
-
-
-
-    
-
-

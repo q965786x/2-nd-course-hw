@@ -6,6 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 id="title">студенты</h1>
+    <ul id="list">
+      <li>Глеб</li>
+      <li>Иван</li>
+      <li>Люси</li>
+    </ul>
+
+    <div>
+      <h3>Форма добавления</h3>
+      Имя:
+      <input type="text" id="field" />
+      <br /><br />
+      <button type="button">Удалить последний элемент</button>
+    </div>
 </body>
+  <script>
+    const titleElement = document.getElementById('title');
+
+    titleElement.addEventListener('click', () => {
+      alert('Не стоило сюда нажимать');
+    })// код писать тут) 
+  </script>
+
 </html>
